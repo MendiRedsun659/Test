@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "routes": [
+      {
+        "src": "/test",
+        "dest": "/test.html",
+        "headers": { "Cache-Control": "no-cache" }
+      }
+    ]
+  }

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестирование по информационным технологиям (Начальный уровень)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .question {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 5px;
+        }
+        .options label {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background: #ecf0f1;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .options label:hover {
+            background: #d6eaf8;
+        }
+        button {
+            display: block;
+            width: 200px;
+            margin: 30px auto;
+            padding: 12px;
+            background: #27ae60;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #2ecc71;
+        }
+        .result {
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .correct {
+            color: #27ae60;
+        }
+        .incorrect {
+            color: #e74c3c;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Тестирование по информационным технологиям</h1>
+        <h2>Начальный уровень</h2>
+
+        <div class="section">
+            <h3>Раздел 1: Работа с файлами и папками</h3>
+            
+            <div class="question">
+                <p>1. Верно ли утверждение: "Папка — это группа файлов, объединенная по некоторому принципу, имеющая имя."</p>
+                <div class="options">
+                    <label><input type="radio" name="q1" value="a"> Верно</label>
+                    <label><input type="radio" name="q1" value="b"> Неверно</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>2. Восстановите правильный порядок алгоритма создания папки:</p>
+                <div class="options">
+                    <label><input type="checkbox" name="q2" value="1"> Нажать «Создать»</label>
+                    <label><input type="checkbox" name="q2" value="2"> Щелкнуть правой кнопкой мыши на рабочем столе</label>
+                    <label><input type="checkbox" name="q2" value="3"> Нажать «Папку»</label>
+                    <label><input type="checkbox" name="q2" value="4"> Нажать клавишу Enter</label>
+                    <label><input type="checkbox" name="q2" value="5"> Написать имя папки</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>3. Как правильно переименовать папку?</p>
+                <div class="options">
+                    <label><input type="radio" name="q3" value="a"> Щелкнуть левой кнопкой мыши → «Переименовать»</label>
+                    <label><input type="radio" name="q3" value="b"> Щелкнуть правой кнопкой мыши → «Переименовать»</label>
+                    <label><input type="radio" name="q3" value="c"> Двойной щелчок по имени папки</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Раздел 2: Текстовые редакторы</h3>
+            
+            <div class="question">
+                <p>4. Верно ли утверждение: "Текстовый редактор — это программа для создания, форматирования, редактирования, печати и сохранения текстового документа."</p>
+                <div class="options">
+                    <label><input type="radio" name="q4" value="a"> Верно</label>
+                    <label><input type="radio" name="q4" value="b"> Неверно</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>5. Какие элементы форматирования текста существуют? (выберите несколько вариантов)</p>
+                <div class="options">
+                    <label><input type="checkbox" name="q5" value="1"> Оформление шрифта</label>
+                    <label><input type="checkbox" name="q5" value="2"> Выравнивание текста</label>
+                    <label><input type="checkbox" name="q5" value="3"> Установка абзацев и отступов</label>
+                    <label><input type="checkbox" name="q5" value="4"> Создание анимации</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>6. Для чего используется клавиша Enter в текстовом редакторе?</p>
+                <div class="options">
+                    <label><input type="radio" name="q6" value="a"> Для начала нового абзаца</label>
+                    <label><input type="radio" name="q6" value="b"> Для удаления текста</label>
+                    <label><input type="radio" name="q6" value="c"> Для сохранения документа</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Раздел 3: Презентации</h3>
+            
+            <div class="question">
+                <p>7. Где наиболее полезно применять презентации?</p>
+                <div class="options">
+                    <label><input type="checkbox" name="q7" value="1"> При докладе в классе</label>
+                    <label><input type="checkbox" name="q7" value="2"> При представлении учебного материала</label>
+                    <label><input type="checkbox" name="q7" value="3"> При выступлениях на конференциях</label>
+                    <label><input type="checkbox" name="q7" value="4"> При написании кода</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>8. Информационный материал в презентациях размещается на:</p>
+                <div class="options">
+                    <label><input type="radio" name="q8" value="a"> Листах</label>
+                    <label><input type="radio" name="q8" value="b"> Таблицах</label>
+                    <label><input type="radio" name="q8" value="c"> Слайдах</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <p>9. Какие преимущества дают шаблоны в конструкторах презентаций?</p>
+                <div class="options">
+                    <label><input type="checkbox" name="q9" value="1"> Упрощают процесс оформления слайдов</label>
+                    <label><input type="checkbox" name="q9" value="2"> Экономят время</label>
+                    <label><input type="checkbox" name="q9" value="3"> Автоматически создают контент</label>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="checkTest()">Завершить тест</button>
+        <div id="testResult" class="result"></div>
+    </div>
+
+    <script>
+        function checkTest() {
+            // Правильные ответы
+            const correctAnswers = {
+                q1: "a",
+                q2: ["2", "1", "3", "5", "4"], // Правильный порядок
+                q3: "b",
+                q4: "a",
+                q5: ["1", "2", "3"],
+                q6: "a",
+                q7: ["1", "2", "3"],
+                q8: "c",
+                q9: ["1", "2"]
+            };
+
+            let score = 0;
+            const totalQuestions = Object.keys(correctAnswers).length;
+            const resultElement = document.getElementById('testResult');
+
+            // Проверка каждого вопроса
+            for (const question in correctAnswers) {
+                const selectedOptions = getSelectedOptions(question);
+                
+                if (Array.isArray(correctAnswers[question])) {
+                    // Для вопросов с несколькими вариантами
+                    if (arraysEqual(selectedOptions, correctAnswers[question])) {
+                        score++;
+                    }
+                } else {
+                    // Для вопросов с одним вариантом
+                    if (selectedOptions[0] === correctAnswers[question]) {
+                        score++;
+                    }
+                }
+            }
+
+            // Вывод результата
+            const percentage = Math.round((score / totalQuestions) * 100);
+            resultElement.style.display = 'block';
+            resultElement.textContent = `Ваш результат: ${score} из ${totalQuestions} (${percentage}%)`;
+            
+            if (percentage >= 70) {
+                resultElement.className = 'result correct';
+                resultElement.textContent += ' - Отличный результат!';
+            } else {
+                resultElement.className = 'result incorrect';
+                resultElement.textContent += ' - Попробуйте еще раз!';
+            }
+
+            // Прокрутка к результату
+            resultElement.scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Получение выбранных вариантов
+        function getSelectedOptions(questionName) {
+            const inputs = document.querySelectorAll(`input[name="${questionName}"]:checked`);
+            const selected = [];
+            
+            inputs.forEach(input => {
+                selected.push(input.value);
+            });
+            
+            return selected;
+        }
+
+        // Сравнение массивов
+        function arraysEqual(a, b) {
+            if (a.length !== b.length) return false;
+            
+            for (let i = 0; i < a.length; i++) {
+                if (a[i] !== b[i]) return false;
+            }
+            
+            return true;
+        }
+    </script>
+</body>
+</html>
